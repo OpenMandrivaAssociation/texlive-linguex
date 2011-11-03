@@ -1,3 +1,9 @@
+# revision 19440
+# category Package
+# catalog-ctan /macros/latex/contrib/linguex
+# catalog-date 2010-06-01 09:12:12 +0200
+# catalog-license lppl
+# catalog-version 4.3
 Name:		texlive-linguex
 Version:	4.3
 Release:	1
@@ -49,6 +55,7 @@ shortcomings.
 %doc %{_texmfdistdir}/doc/latex/linguex/linguex-doc.tex
 %doc %{_texmfdistdir}/doc/latex/linguex/ps-trees-doc.pdf
 %doc %{_texmfdistdir}/doc/latex/linguex/ps-trees-doc.tex
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -59,3 +66,5 @@ shortcomings.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
