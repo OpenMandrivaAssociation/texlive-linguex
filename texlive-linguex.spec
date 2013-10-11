@@ -1,12 +1,12 @@
-# revision 19440
+# revision 30815
 # category Package
 # catalog-ctan /macros/latex/contrib/linguex
-# catalog-date 2010-06-01 09:12:12 +0200
+# catalog-date 2013-05-29 00:53:00 +0200
 # catalog-license lppl
 # catalog-version 4.3
 Name:		texlive-linguex
 Version:	4.3
-Release:	2
+Release:	3
 Summary:	Format linguists' examples
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/linguex
@@ -41,7 +41,6 @@ shortcomings.
 %{_texmfdistdir}/tex/latex/linguex/linguho.sty
 %{_texmfdistdir}/tex/latex/linguex/ps-trees.sty
 %doc %{_texmfdistdir}/doc/latex/linguex/README
-%doc %{_texmfdistdir}/doc/latex/linguex/README.TEXLIVE
 %doc %{_texmfdistdir}/doc/latex/linguex/linguex-doc.pdf
 %doc %{_texmfdistdir}/doc/latex/linguex/linguex-doc.tex
 %doc %{_texmfdistdir}/doc/latex/linguex/ps-trees-doc.pdf
@@ -56,17 +55,3 @@ shortcomings.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 4.3-2
-+ Revision: 753313
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 4.3-1
-+ Revision: 718863
-- texlive-linguex
-- texlive-linguex
-- texlive-linguex
-- texlive-linguex
-
