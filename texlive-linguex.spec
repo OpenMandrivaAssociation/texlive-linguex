@@ -6,7 +6,7 @@
 # catalog-version 4.3
 Name:		texlive-linguex
 Version:	4.3
-Release:	6
+Release:	7
 Summary:	Format linguists' examples
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/linguex
