@@ -1,18 +1,12 @@
-# revision 30815
-# category Package
-# catalog-ctan /macros/latex/contrib/linguex
-# catalog-date 2013-05-29 00:53:00 +0200
-# catalog-license lppl
-# catalog-version 4.3
 Name:		texlive-linguex
-Version:	4.3
-Release:	12
+Version:	30815
+Release:	1
 Summary:	Format linguists' examples
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/linguex
 License:	LPPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/linguex.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/linguex.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/linguex.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/linguex.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -28,12 +22,12 @@ of tree-dvips, but overcoming some of the older package's
 shortcomings.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -48,7 +42,7 @@ shortcomings.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
