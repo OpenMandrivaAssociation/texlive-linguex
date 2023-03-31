@@ -1,6 +1,6 @@
 Name:		texlive-linguex
 Version:	30815
-Release:	1
+Release:	2
 Summary:	Format linguists' examples
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/linguex
