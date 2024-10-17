@@ -3,7 +3,7 @@ Version:	30815
 Release:	2
 Summary:	Format linguists' examples
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/linguex
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/linguex
 License:	LPPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/linguex.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/linguex.doc.r%{version}.tar.xz
